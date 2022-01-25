@@ -60,7 +60,7 @@ function xml_rpc_error_plugin_init()
 // Settings initializer.
 function xml_rpc_tweak_settings_init()
 {
-    register_setting('xml_rpc_tweak', 'xml_rpc_tweak_mode', array('type' => 'integer'));
+    register_setting('xml_rpc_tweak', 'xml_rpc_tweak_mode', array('type' => 'integer', 'default' => 0));
  
     add_settings_section(
         'xml_rpc_tweak_section_mode',
